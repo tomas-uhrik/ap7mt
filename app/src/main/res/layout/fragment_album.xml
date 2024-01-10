@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AlbumFragment"
+    android:background="@color/colorPrimary"
+    >
+
+    <!-- EditText nad RecyclerView -->
+    <EditText
+        android:id="@+id/editTextPlaylist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Playlist Name"
+        android:textColorHint="@color/white"
+        android:textColor="@android:color/white"
+        android:background="@color/colorPrimary"
+        android:padding="8dp"
+        android:layout_toStartOf="@id/buttonCreatePlaylist"
+        android:layout_marginStart="15dp"
+        />
+
+
+    <Button
+        android:id="@+id/buttonCreatePlaylist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create Playlist"
+        android:layout_alignTop="@id/editTextPlaylist"
+        android:layout_alignBottom="@id/editTextPlaylist"
+        android:background="@color/colorPrimary"
+        android:layout_alignEnd="@id/recyclerView"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="20dp"
+        android:textColor="@color/white"
+
+
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/editTextPlaylist"
+        android:background="@color/colorPrimary"/>
+
+</RelativeLayout>
